@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Literary Finds - Find all the books here!</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Navbar Part -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bgClass">
+      <a class="navbar-brand text-light">Literary Finds</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end class" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link text-light" href="index.html#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="index.html#contact">Contact</a>
+          </li>
+          <li>
+            <div class="btn btn-light nav-item navbar-btn" id="login" onclick="location.href='/'">Go Back
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section class="searchsort align-self-center">
+    <div class="container-fluid searchPart bgClass">
+      <div class="text-center">
+        <h3 class="text-light catchyText">
+          Literary Finds - Discover literary treasures at Literary Finds!
+        </h3>
+      </div>
+      <div class="formSearch">
+        <div class="searchInputForm">
+          <input type="text" id="search" class="form-control" placeholder="Search Books" onkeyup="searchBooks()" autocomplete="off">
+          <button onclick="sortTable()" class="sortButton btn btn-dark">Sort Books</button>
+        </div>
+        <h4 id="countResult" class="text-center mt-3 text-light"></h4>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <table class="table table-bordered" id="bookstable">
+      <thead>
+        <tr>
+          <th scope="col">Title with Year</th>
+          <th scope="col">Author</th>
+          <th scope="col">Language</th>
+        </tr>
+      </thead>
+      <tbody id="tablebody"><tr>
+            <td>Things Fall Apart</td>
+            <td>Chinua Achebe - <a href="https://en.wikipedia.org/wiki/Things_Fall_Apart">Book Details</a></td>
+            <td>English - 1958</td>
+      </tr><tr>
+            <td>Fairy tales</td>
+            <td>Hans Christian Andersen - <a href="https://en.wikipedia.org/wiki/Fairy_Tales_Told_for_Children._First_Collection.">Book Details</a></td>
+            <td>Danish - 1836</td>
+      </tr><tr>
+            <td>The Divine Comedy</td>
+            <td>Dante Alighieri - <a href="https://en.wikipedia.org/wiki/Divine_Comedy">Book Details</a></td>
+            <td>Italian - 1315</td>
+      </tr><tr>
+            <td>Pride and Prejudice</td>
+            <td>Jane Austen - <a href="https://en.wikipedia.org/wiki/Pride_and_Prejudice">Book Details</a></td>
+            <td>English - 1813</td>
+      </tr><tr>
+            <td>Le Père Goriot</td>
+            <td>Honoré de Balzac - <a href="https://en.wikipedia.org/wiki/Le_P%C3%A8re_Goriot">Book Details</a></td>
+            <td>French - 1835</td>
+      </tr><tr>
+            <td>Molloy, Malone Dies, The Unnamable, the trilogy</td>
+            <td>Samuel Beckett - <a href="https://en.wikipedia.org/wiki/Molloy_(novel)">Book Details</a></td>
+            <td>French, English - 1952</td>
+      </tr><tr>
+            <td>The Decameron</td>
+            <td>Giovanni Boccaccio - <a href="https://en.wikipedia.org/wiki/The_Decameron">Book Details</a></td>
+            <td>Italian - 1351</td>
+      </tr><tr>
+            <td>Ficciones</td>
+            <td>Jorge Luis Borges - <a href="https://en.wikipedia.org/wiki/Ficciones">Book Details</a></td>
+            <td>Spanish - 1965</td>
+      </tr><tr>
+            <td>Wuthering Heights</td>
+            <td>Emily Brontë - <a href="https://en.wikipedia.org/wiki/Wuthering_Heights">Book Details</a></td>
+            <td>English - 1847</td>
+      </tr><tr>
+            <td>The Stranger</td>
+            <td>Albert Camus - <a href="https://en.wikipedia.org/wiki/The_Stranger_(novel)">Book Details</a></td>
+            <td>French - 1942</td>
+      </tr><tr>
+            <td>Journey to the End of the Night</td>
+            <td>Louis-Ferdinand Céline - <a href="https://en.wikipedia.org/wiki/Journey_to_the_End_of_the_Night">Book Details</a></td>
+            <td>French - 1932</td>
+      </tr><tr>
+            <td>Don Quijote De La Mancha</td>
+            <td>Miguel de Cervantes - <a href="https://en.wikipedia.org/wiki/Don_Quixote">Book Details</a></td>
+            <td>Spanish - 1610</td>
+      </tr><tr>
+            <td>The Canterbury Tales</td>
+            <td>Geoffrey Chaucer - <a href="https://en.wikipedia.org/wiki/The_Canterbury_Tales">Book Details</a></td>
+            <td>English - 1450</td>
+      </tr><tr>
+            <td>Stories</td>
+            <td>Anton Chekhov - <a href="https://en.wikipedia.org/wiki/List_of_short_stories_by_Anton_Chekhov">Book Details</a></td>
+            <td>Russian - 1886</td>
+      </tr><tr>
+            <td>Nostromo</td>
+            <td>Joseph Conrad - <a href="https://en.wikipedia.org/wiki/Nostromo">Book Details</a></td>
+            <td>English - 1904</td>
+      </tr><tr>
+            <td>Great Expectations</td>
+            <td>Charles Dickens - <a href="https://en.wikipedia.org/wiki/Great_Expectations">Book Details</a></td>
+            <td>English - 1861</td>
+      </tr><tr>
+            <td>Jacques the Fatalist</td>
+            <td>Denis Diderot - <a href="https://en.wikipedia.org/wiki/Jacques_the_Fatalist">Book Details</a></td>
+            <td>French - 1796</td>
+      </tr><tr>
+            <td>Berlin Alexanderplatz</td>
+            <td>Alfred Döblin - <a href="https://en.wikipedia.org/wiki/Berlin_Alexanderplatz">Book Details</a></td>
+            <td>German - 1929</td>
+      </tr><tr>
+            <td>Crime and Punishment</td>
+            <td>Fyodor Dostoevsky - <a href="https://en.wikipedia.org/wiki/Crime_and_Punishment">Book Details</a></td>
+            <td>Russian - 1866</td>
+      </tr><tr>
+            <td>The Idiot</td>
+            <td>Fyodor Dostoevsky - <a href="https://en.wikipedia.org/wiki/The_Idiot">Book Details</a></td>
+            <td>Russian - 1869</td>
+      </tr><tr>
+            <td>The Possessed</td>
+            <td>Fyodor Dostoevsky - <a href="https://en.wikipedia.org/wiki/Demons_(Dostoyevsky_novel)">Book Details</a></td>
+            <td>Russian - 1872</td>
+      </tr><tr>
+            <td>The Brothers Karamazov</td>
+            <td>Fyodor Dostoevsky - <a href="https://en.wikipedia.org/wiki/The_Brothers_Karamazov">Book Details</a></td>
+            <td>Russian - 1880</td>
+      </tr><tr>
+            <td>Middlemarch</td>
+            <td>George Eliot - <a href="https://en.wikipedia.org/wiki/Middlemarch">Book Details</a></td>
+            <td>English - 1871</td>
+      </tr><tr>
+            <td>Invisible Man</td>
+            <td>Ralph Ellison - <a href="https://en.wikipedia.org/wiki/Invisible_Man">Book Details</a></td>
+            <td>English - 1952</td>
+      </tr><tr>
+            <td>Medea</td>
+            <td>Euripides - <a href="https://en.wikipedia.org/wiki/Medea_(play)">Book Details</a></td>
+            <td>Greek - 431</td>
+      </tr><tr>
+            <td>Absalom, Absalom!</td>
+            <td>William Faulkner - <a href="https://en.wikipedia.org/wiki/Absalom,_Absalom!">Book Details</a></td>
+            <td>English - 1936</td>
+      </tr><tr>
+            <td>The Sound and the Fury</td>
+            <td>William Faulkner - <a href="https://en.wikipedia.org/wiki/The_Sound_and_the_Fury">Book Details</a></td>
+            <td>English - 1929</td>
+      </tr><tr>
+            <td>Madame Bovary</td>
+            <td>Gustave Flaubert - <a href="https://en.wikipedia.org/wiki/Madame_Bovary">Book Details</a></td>
+            <td>French - 1857</td>
+      </tr><tr>
+            <td>Sentimental Education</td>
+            <td>Gustave Flaubert - <a href="https://en.wikipedia.org/wiki/Sentimental_Education">Book Details</a></td>
+            <td>French - 1869</td>
+      </tr>
+    </tbody>
+    </table>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+
+  <script>
+    function searchBooks()
+    {
+        const searchInput = document.getElementById('search');
+        //console.log(searchInput)
+        const rows = document.querySelectorAll("table tbody tr");
+
+        for(let i=0; i<rows.length; i++)
+        {
+            const rowData = rows[i].innerHTML;
+            // console.table(rowData);
+        }
+        searchInput.addEventListener("keyup", function (event) {
+            const userQuery = event.target.value.toLowerCase();
+            var count = 0;
+            rows.forEach((row) => {
+                row.querySelector("td").textContent.toLowerCase().startsWith(userQuery)
+                ? (row.style.display = "table-row", ++count)
+                : (row.style.display = "none");
+            });
+            document.getElementById('countResult').innerHTML = `${count} Books Found`
+        })
+    }
+
+    function sortTable() {
+      var table, rows, switching, i, x, y, shouldSwitch;
+      table = document.getElementById("bookstable");
+      switching = true;
+      while (switching) {
+        switching = false;
+        rows = table.rows;
+        for (i = 1; i < (rows.length - 1); i++) {
+          shouldSwitch = false;
+          x = rows[i].getElementsByTagName("td")[0];
+          y = rows[i + 1].getElementsByTagName("td")[0];e:
+          if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+            shouldSwitch = true;
+            break;
+          }
+        }
+        if (shouldSwitch) {
+          rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+          switching = true;
+        }
+      }
+  }
+  </script>
+
+</body>
+
+</html>
