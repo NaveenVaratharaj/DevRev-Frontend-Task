@@ -11,6 +11,6 @@ This is a web application named "Literary Finds" which is used to find various b
 ✅ Developed authentication functionality to the page <br />
 
 # Technologies Used
-📍Frontend : HTML, CSS, Bootstrap, JavaScript
+📍Frontend : HTML, CSS, Bootstrap, JavaScript <br />
 📍Backend : NodeJS, ExpressJS, MongoDB, Mongoose, Bcrypt
 
