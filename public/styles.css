@@ -158,6 +158,46 @@ ul li{
     padding: 10px;
 }
 
+/* Login and SignUp Pages */
+.login {
+  background-color: #fae0e0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 5%;
+  box-shadow: 5px 5px 5px rgb(109, 109, 109);
+  display: inline;
+  height: 470px;
+  width: 480px;
+  margin-top: 5%;
+}
+
+#span {
+  padding-top: 6%;
+}
+
+#login_heading {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 2.2rem;
+  color: rgb(0, 0, 0)
+}
+
+.signup {
+  height: 510px;
+  width: 500px;
+}
+
+.form-width {
+  margin-top: 50px;
+  width: 50%;
+  height: 508px;
+  align-items: center;
+  padding: 20px;
+  font-weight: bold;
+  border-radius: 5px;
+}
 
 @media (max-width: 768px) {
     #tophead {
